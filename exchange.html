@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Currency Converter</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+		<div class="jumbotron">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+						<div class="media">
+							<div class="media-left">
+								<a href="#">
+									<img class="media-object" src="images/exchange.png" alt="Exchange">
+								</a>
+							</div>
+
+						</div>
+					</div>
+					<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+						<h1>Currency Converter</h1>
+						
+						<p>Check how much you can get with what you have to exchange!</p>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<div role="tabpanel">
+			<!-- Nav tabs -->
+			<ul class="nav nav-tabs" role="tablist">
+				<li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Converter</a></li>
+				<li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Rates</a></li>
+				<li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Analysis</a></li>
+				<li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">About</a></li>
+			</ul>
+
+			<!-- Tab panes -->
+			<div class="tab-content">
+				<div role="tabpanel" class="tab-pane active" id="home">
+					<div class="row">
+						<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h3 class="panel-title">Categories</h3>
+								</div>
+								<div class="panel-body">
+									<div class="list-group">
+										<a href="#" class="list-group-item active">Currency Tools</a>
+										<a href="#" class="list-group-item">Popular currency profiles</a>
+										<a href="#" class="list-group-item">Market Analysis</a>
+										<a href="#" class="list-group-item">Currency Data</a>
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h3 class="panel-title">Archives</h3>
+								</div>
+								<div class="panel-body">
+
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h3 class="panel-title" align="center">Converter</h3>
+								</div>
+								<div class="panel-body">
+									
+									<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+										<div class="row">
+											<h4> Currency I Have: 
+												<h5>PLN</h5>
+											</h4>
+											<h4> Amount to exchange: <input type="text" id="amount" value=""></h4>												
+										</div>																
+									</div>
+
+									<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+										<h4>Currency I Want: 
+											<h5>Available options are: dolar, euro, frank</h5>
+											<input type="text" id="want" value="">
+										</h4>
+									</div>
+									<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+										<div class="row">
+											<button onclick="exchange()">Exchange</button>		
+										</div>
+										<div class="row">
+											<h4>Amount I get:
+												<h4 id="result"></h4>
+											</h4>									
+										</div>
+
+									</div>
+									
+								</div>
+								
+							</div>
+						</div>
+						
+					</div>
+				</div>
+				<div role="tabpanel" class="tab-pane" id="profile">
+					<div class="row">
+						<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h3 class="panel-title">Categories</h3>
+								</div>
+								<div class="panel-body">
+									<div class="list-group">
+										<a href="#" class="list-group-item active">Currency Tools</a>
+										<a href="#" class="list-group-item">Popular currency profiles</a>
+										<a href="#" class="list-group-item">Market Analysis</a>
+										<a href="#" class="list-group-item">Currency Data</a>
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h3 class="panel-title">Archives</h3>
+								</div>
+								<div class="panel-body">
+
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h3 class="panel-title" align="center">Rates</h3>
+								</div>
+								<div class="panel-body">
+									
+								</div>
+								
+							</div>
+						</div>
+						
+					</div>
+				</div>
+				<div role="tabpanel" class="tab-pane" id="messages">
+					<div class="row">
+						<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h3 class="panel-title">Categories</h3>
+								</div>
+								<div class="panel-body">
+									<div class="list-group">
+										<a href="#" class="list-group-item active">Currency Tools</a>
+										<a href="#" class="list-group-item">Popular currency profiles</a>
+										<a href="#" class="list-group-item">Market Analysis</a>
+										<a href="#" class="list-group-item">Currency Data</a>
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h3 class="panel-title">Archives</h3>
+								</div>
+								<div class="panel-body">
+
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h3 class="panel-title" align="center">Analysis</h3>
+								</div>
+								<div class="panel-body">
+									
+								</div>
+								
+							</div>
+						</div>
+						
+					</div>
+				</div>
+				<div role="tabpanel" class="tab-pane" id="settings">
+					<div class="row">
+						<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h3 class="panel-title">Categories</h3>
+								</div>
+								<div class="panel-body">
+									<div class="list-group">
+										<a href="#" class="list-group-item active">Currency Tools</a>
+										<a href="#" class="list-group-item">Popular currency profiles</a>
+										<a href="#" class="list-group-item">Market Analysis</a>
+										<a href="#" class="list-group-item">Currency Data</a>
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h3 class="panel-title">Archives</h3>
+								</div>
+								<div class="panel-body">
+
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h3 class="panel-title" align="center">About</h3>
+								</div>
+								<div class="panel-body">
+									Read more!
+								</div>
+								
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+
+		</div>
+		
+	</div>
+	<nav class="navbar navbar-default navbar-fixed-bottom">
+		<div class="container" align="center">
+			Copyright 2015 Currency Converter. All rights reserved.
+		</div>
+	</nav>
+	<script type="text/javascript" src="js/test.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</body>
+</html>
